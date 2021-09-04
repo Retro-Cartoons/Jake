@@ -21,11 +21,6 @@ open class JakeTableViewHeader: UITableViewHeaderFooterView {
   public var delegate: JakeTableViewHeaderProtocol?
   public var section: Int?
   
-  public func collapseOrExpandTrigger() {
-    guard let section = section else { return }
-    delegate?.collapseOrExpandTriggeredFor(section)
-  }
-  
   public init() {
     super.init(reuseIdentifier: "")
     setBackgroundColor(.white)
@@ -34,6 +29,11 @@ open class JakeTableViewHeader: UITableViewHeaderFooterView {
   required public init?(coder: NSCoder) {
     super.init(coder: coder)
     setBackgroundColor(.white)
+  }
+  
+  public func collapseOrExpandTrigger() {
+    guard let section = section else { return }
+    delegate?.collapseOrExpandTriggeredFor(section)
   }
   
   open func expandedSection(_ section: Int) {
