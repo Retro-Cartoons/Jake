@@ -31,6 +31,12 @@ final class NibHeaderView: JakeTableViewHeader {
     
   }
   
+  override func expandedSection(_ section: Int) {
+    super.expandedSection(section)
+    
+    button.isSelected = self.section == section
+  }
+  
   func refreshWith(_ title: String, isExpanded: Bool) {
     titleLabel.text = title
     button.isSelected = isExpanded
