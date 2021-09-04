@@ -4,6 +4,6 @@
 target 'Example' do
   use_frameworks!
    
-  pod 'Jake', :path => '/Users/ferhan/Desktop/Jake'
+  pod 'Jake', :path => '../'
 
 end
