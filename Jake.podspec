@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Jake'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'Easiest way to use expandable tableView.'
   s.homepage         = 'https://github.com/Retro-Cartoons/Jake'
   s.license          = { :type => 'MIT', :file => 'LICENSE.md' }

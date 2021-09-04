@@ -1,0 +1,16 @@
+PODS:
+  - Jake (0.1.0)
+
+DEPENDENCIES:
+  - Jake (from `/Users/ferhan/Desktop/JakeSPM/Jake/`)
+
+EXTERNAL SOURCES:
+  Jake:
+    :path: "/Users/ferhan/Desktop/JakeSPM/Jake/"
+
+SPEC CHECKSUMS:
+  Jake: 555add7622b411314cc89a7fd070268858c03d93
+
+PODFILE CHECKSUM: 633436ae1b3f416d6cd38aea12ab1d010494336b
+
+COCOAPODS: 1.10.1
