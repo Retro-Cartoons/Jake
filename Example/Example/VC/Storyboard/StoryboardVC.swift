@@ -47,7 +47,7 @@ extension StoryboardVC: JakeTableViewDelegateAndDatasourceProtocol {
   }
   
   func jakeTableView(_ tableView: UITableView, viewForHeaderInSection section: Int, isExpanded: Bool) -> JakeTableViewHeader? {
-    guard let view = UINib(nibName: "NibHeaderView", bundle: .main).instantiate(withOwner: self, options: nil).first as? NibHeaderView else { return JakeTableViewHeader()}
+    guard let view = UINib(nibName: "NibHeaderView", bundle: .main).instantiate(withOwner: self, options: nil).first as? NibHeaderView else { return JakeTableViewHeader() }
     view.section = section
     view.refreshWith("Section \(section)", isExpanded: isExpanded)
     return view

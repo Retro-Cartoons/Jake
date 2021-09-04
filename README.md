@@ -62,10 +62,13 @@ var hasSeparator: Bool = true // Set's separators is removed behind cells. When 
 var autoCollapse: Bool = true // When selected section expand other sections collapse automatically.
 ```
 
-**JakeTableViewHeader Properties**
+**JakeTableViewHeader Properties & Functions**
 ```swift
 public var delegate: JakeTableViewHeaderProtocol?
 public var section: Int?
+
+oublic func expandedSection(_ section: Int) // When you want to use the autocollapse feature, it shows which header is expanded into the header.
+public func collapseOrExpandTrigger() // It allows you to collapse and expand operations in the header.
 ```
 
 ### XIB
