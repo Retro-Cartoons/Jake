@@ -35,7 +35,6 @@ final class ProgrammaticVC: UIViewController {
   }
 }
 
-
 // MARK: - Layout
 
 extension ProgrammaticVC {

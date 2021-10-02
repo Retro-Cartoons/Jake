@@ -26,11 +26,6 @@ final class NibHeaderView: JakeTableViewHeader {
     button.isSelected = false
   }
   
-  override class func awakeFromNib() {
-    super.awakeFromNib()
-    
-  }
-  
   override func expandedSection(_ section: Int) {
     super.expandedSection(section)
     

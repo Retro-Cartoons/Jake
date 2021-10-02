@@ -29,7 +29,6 @@ final class HomeVC: UIViewController {
   }
 }
 
-
 // MARK: - Layout
 
 extension HomeVC {
@@ -51,7 +50,7 @@ extension HomeVC {
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 3
+    3
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

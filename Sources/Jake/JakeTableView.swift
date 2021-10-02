@@ -18,10 +18,6 @@ public final class JakeTableView: UIView {
     }
   }
   
-  private var cellsProgramattic: [UITableViewCell.Type] = []
-  private var cellsNib: [(UINib, String)] = []
-  private var jakeTableViewDelegate: JakeTableViewDelegate = JakeTableViewDelegate()
-  
   /// Determines tableView DataSource and Delegate
   public weak var delegate: JakeTableViewDelegateAndDatasourceProtocol? {
     didSet {
@@ -43,6 +39,10 @@ public final class JakeTableView: UIView {
   @IBInspectable
   public var autoCollapse: Bool = true
   
+  private var cellsProgramattic: [UITableViewCell.Type] = []
+  private var cellsNib: [(UINib, String)] = []
+  private var jakeTableViewDelegate: JakeTableViewDelegate = JakeTableViewDelegate()
+  
   private var tableView: UITableView?
   
   // MARK: - Initilizer
@@ -55,6 +55,7 @@ public final class JakeTableView: UIView {
     setLayout()
     tableView?.reloadData()
   }
+  
   public override init(frame: CGRect) {
     super.init(frame: frame)
     
@@ -144,10 +145,10 @@ extension JakeTableView {
     self.tableView?.reloadData()
   }
 }
+
 // MARK: - Logic
 
 extension JakeTableView {
-  
   private func collapsOrExpande(_ section: Int) {
     
     let shouldCollapse = jakeTableViewDelegate.expandSections.contains(section)
@@ -156,7 +157,6 @@ extension JakeTableView {
       jakeTableViewDelegate.expandSections.remove(section)
       self.tableView?.deleteRows(at: indexPathsFor(section: section),
                                  with: .fade)
-      
     } else {
       jakeTableViewDelegate.headerExpanded(tableView: tableView,
                                            section: section)
