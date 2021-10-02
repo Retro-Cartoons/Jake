@@ -18,6 +18,8 @@
 		580DD70826A885BD00CCEA81 /* NibHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DD70726A885BD00CCEA81 /* NibHeaderView.swift */; };
 		580DD70A26A885CC00CCEA81 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DD70926A885CC00CCEA81 /* HomeVC.swift */; };
 		580DD70E26A886E100CCEA81 /* NibHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 580DD70D26A886E100CCEA81 /* NibHeaderView.xib */; };
+		5872A2772708DF210015A0D1 /* NibHeaderNonAutoCollapse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5872A2762708DF210015A0D1 /* NibHeaderNonAutoCollapse.swift */; };
+		5872A2792708DF300015A0D1 /* NibHeaderNonAutoCollapse.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5872A2782708DF300015A0D1 /* NibHeaderNonAutoCollapse.xib */; };
 		58DED3F426B46B5C00B7D80D /* NibCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DED3F226B46B5C00B7D80D /* NibCellTableViewCell.swift */; };
 		58DED3F526B46B5C00B7D80D /* NibCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DED3F326B46B5C00B7D80D /* NibCellTableViewCell.xib */; };
 		58EC124726B4316D00EDBEF6 /* NibController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58EC124626B4316D00EDBEF6 /* NibController.xib */; };
@@ -40,6 +42,8 @@
 		580DD70726A885BD00CCEA81 /* NibHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibHeaderView.swift; sourceTree = "<group>"; };
 		580DD70926A885CC00CCEA81 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		580DD70D26A886E100CCEA81 /* NibHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NibHeaderView.xib; sourceTree = "<group>"; };
+		5872A2762708DF210015A0D1 /* NibHeaderNonAutoCollapse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibHeaderNonAutoCollapse.swift; sourceTree = "<group>"; };
+		5872A2782708DF300015A0D1 /* NibHeaderNonAutoCollapse.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NibHeaderNonAutoCollapse.xib; sourceTree = "<group>"; };
 		58DED3F226B46B5C00B7D80D /* NibCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibCellTableViewCell.swift; sourceTree = "<group>"; };
 		58DED3F326B46B5C00B7D80D /* NibCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NibCellTableViewCell.xib; sourceTree = "<group>"; };
 		58EC124626B4316D00EDBEF6 /* NibController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NibController.xib; sourceTree = "<group>"; };
@@ -156,9 +160,19 @@
 			name = HeaderView;
 			sourceTree = "<group>";
 		};
+		5872A2752708DF070015A0D1 /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				5872A2762708DF210015A0D1 /* NibHeaderNonAutoCollapse.swift */,
+				5872A2782708DF300015A0D1 /* NibHeaderNonAutoCollapse.xib */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
 		58EC124526B4315300EDBEF6 /* Nib */ = {
 			isa = PBXGroup;
 			children = (
+				5872A2752708DF070015A0D1 /* HeaderView */,
 				58EC124626B4316D00EDBEF6 /* NibController.xib */,
 				58EC124826B4317C00EDBEF6 /* NibController.swift */,
 			);
@@ -253,6 +267,7 @@
 				58DED3F526B46B5C00B7D80D /* NibCellTableViewCell.xib in Resources */,
 				58EC124726B4316D00EDBEF6 /* NibController.xib in Resources */,
 				580DD6EE26A8831900CCEA81 /* Assets.xcassets in Resources */,
+				5872A2792708DF300015A0D1 /* NibHeaderNonAutoCollapse.xib in Resources */,
 				580DD6EC26A8831700CCEA81 /* Main.storyboard in Resources */,
 				580DD70E26A886E100CCEA81 /* NibHeaderView.xib in Resources */,
 			);
@@ -313,6 +328,7 @@
 				580DD70426A8859800CCEA81 /* ProgrammaticJakeCell.swift in Sources */,
 				580DD70226A8858600CCEA81 /* ProgrammaticHeaderView.swift in Sources */,
 				580DD70826A885BD00CCEA81 /* NibHeaderView.swift in Sources */,
+				5872A2772708DF210015A0D1 /* NibHeaderNonAutoCollapse.swift in Sources */,
 				580DD6E526A8831700CCEA81 /* AppDelegate.swift in Sources */,
 				58EC124926B4317C00EDBEF6 /* NibController.swift in Sources */,
 				580DD70026A8856700CCEA81 /* ProgrammaticVC.swift in Sources */,
