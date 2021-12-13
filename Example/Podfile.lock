@@ -1,0 +1,16 @@
+PODS:
+  - Jake (1.0.0)
+
+DEPENDENCIES:
+  - Jake (from `../`)
+
+EXTERNAL SOURCES:
+  Jake:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Jake: ea07d75460f3b182da522e3337e441719f56d043
+
+PODFILE CHECKSUM: 0e01e9ced302649b341940743d697e08d43cedbe
+
+COCOAPODS: 1.10.1

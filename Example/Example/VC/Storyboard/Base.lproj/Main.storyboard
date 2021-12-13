@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--StoryboardVC-->
+        <scene sceneID="e2K-pT-Xpj">
+            <objects>
+                <viewController storyboardIdentifier="StoryboardVC" id="tZY-ez-Y8e" customClass="StoryboardVC" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HtW-SQ-qvd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pZ4-0w-LdF" customClass="JakeTableView" customModule="Jake">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasSeparator" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autoCollapse" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XhV-3j-hV6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pZ4-0w-LdF" firstAttribute="leading" secondItem="XhV-3j-hV6" secondAttribute="leading" id="1hI-US-Te2"/>
+                            <constraint firstItem="XhV-3j-hV6" firstAttribute="bottom" secondItem="pZ4-0w-LdF" secondAttribute="bottom" id="58F-wd-wDf"/>
+                            <constraint firstAttribute="trailing" secondItem="pZ4-0w-LdF" secondAttribute="trailing" id="FPp-XM-m5O"/>
+                            <constraint firstItem="pZ4-0w-LdF" firstAttribute="top" secondItem="XhV-3j-hV6" secondAttribute="top" id="XX8-nK-ZTF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="jakeTableView" destination="pZ4-0w-LdF" id="Rnd-c6-9JT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nz6-AZ-j6T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-532" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Jake",
+        "repositoryURL": "/Users/ferhan/Desktop/Jake",
+        "state": {
+          "branch": "main",
+          "revision": "eff386ad939685474a4797d9db24fcb4ef93bc68",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
