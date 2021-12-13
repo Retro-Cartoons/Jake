@@ -67,7 +67,7 @@ var autoCollapse: Bool = true // When selected section expand other sections col
 public var delegate: JakeTableViewHeaderProtocol?
 public var section: Int?
 
-oublic func expandedSection(_ section: Int) // When you want to use the autocollapse feature, it shows which header is expanded into the header.
+public func expandedSection(_ section: Int) // When you want to use the autocollapse feature, it shows which header is expanded into the header.
 public func collapseOrExpandTrigger() // It allows you to collapse and expand operations in the header.
 ```
 
@@ -79,21 +79,15 @@ public func collapseOrExpandTrigger() // It allows you to collapse and expand op
 ### Programmatically
 
 ```swift
-import Foundation
-import Jake
-
-final class ViewController: UIViewController {
-  
-  private lazy var jakeTableView: JakeTableView = {
-    let tableView = JakeTableView()
-    tableView.translatesAutoresizingMaskIntoConstraints = false
-    tableView.delegate = self
-    tableView.registerCells([ProgrammaticJakeCell.self])
-    tableView.autoCollapse = true
-    tableView.hasSeparator = false
-    return tableView
-  }()
-}
+private lazy var jakeTableView: JakeTableView = {
+  let tableView = JakeTableView()
+  tableView.translatesAutoresizingMaskIntoConstraints = false
+  tableView.delegate = self
+  tableView.registerCells([ProgrammaticJakeCell.self])
+  tableView.autoCollapse = true
+  tableView.hasSeparator = false
+  return tableView
+}()
 ```
 
 ### How To Use
@@ -202,4 +196,4 @@ class ViewController: UIViewController, JakeTableViewDelegateAndDatasourceProtoc
 
 ## License
 
-Tom is available under the MIT license. See the LICENSE file for more info.
+Jake is available under the MIT license. See the LICENSE file for more info.
