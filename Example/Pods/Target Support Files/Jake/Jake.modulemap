@@ -1,0 +1,6 @@
+framework module Jake {
+  umbrella header "Jake-umbrella.h"
+
+  export *
+  module * { export * }
+}
